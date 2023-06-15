@@ -1,0 +1,3 @@
+git add .    stages
+git commit -m "something"   commits
+git push    pushes
