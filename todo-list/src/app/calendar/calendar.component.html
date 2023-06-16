@@ -1,3 +1,5 @@
 <div>
-    <mat-calendar></mat-calendar>
+    <mat-calendar [(selected)]="selectedDate"></mat-calendar>
+    {{selectedDate.toLocaleDateString()}}   <!--Binding syntax {{}}-->
+    <a [routerLink]="['/tasks', {data:selectedDate}]">Tasks</a>
 </div>
